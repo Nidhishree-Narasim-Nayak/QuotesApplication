@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DD8BE9462E30046100886615 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BE9452E30046100886615 /* Quote.swift */; };
+		DD8BE9492E3004AD00886615 /* QuoteServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BE9482E3004AD00886615 /* QuoteServiceProtocol.swift */; };
+		DD8BE94C2E3004E400886615 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BE94B2E3004E400886615 /* QuoteService.swift */; };
+		DD8BE94F2E30055700886615 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BE94E2E30055700886615 /* QuoteViewModel.swift */; };
+		DD8BE9532E300B0500886615 /* QuoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BE9522E300B0500886615 /* QuoteListView.swift */; };
+		DD8BE9552E33F5D600886615 /* MockQuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BE9542E33F5D600886615 /* MockQuoteService.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DD8BE9262E3003A700886615 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +36,12 @@
 		DD8BE9182E3003A400886615 /* QuotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8BE9252E3003A700886615 /* QuotesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8BE92F2E3003A700886615 /* QuotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8BE9452E30046100886615 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		DD8BE9482E3004AD00886615 /* QuoteServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteServiceProtocol.swift; sourceTree = "<group>"; };
+		DD8BE94B2E3004E400886615 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		DD8BE94E2E30055700886615 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		DD8BE9522E300B0500886615 /* QuoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListView.swift; sourceTree = "<group>"; };
+		DD8BE9542E33F5D600886615 /* MockQuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQuoteService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +90,11 @@
 		DD8BE90F2E3003A400886615 = {
 			isa = PBXGroup;
 			children = (
+				DD8BE9502E30081500886615 /* Views */,
+				DD8BE94D2E30053900886615 /* ViewModels */,
+				DD8BE94A2E3004D200886615 /* Service */,
+				DD8BE9472E30049000886615 /* Protocols */,
+				DD8BE9422E30040900886615 /* Models */,
 				DD8BE91A2E3003A400886615 /* QuotesApp */,
 				DD8BE9282E3003A700886615 /* QuotesAppTests */,
 				DD8BE9322E3003A700886615 /* QuotesAppUITests */,
@@ -90,6 +110,47 @@
 				DD8BE92F2E3003A700886615 /* QuotesAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DD8BE9422E30040900886615 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD8BE9452E30046100886615 /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD8BE9472E30049000886615 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DD8BE9482E3004AD00886615 /* QuoteServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DD8BE94A2E3004D200886615 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DD8BE94B2E3004E400886615 /* QuoteService.swift */,
+				DD8BE9542E33F5D600886615 /* MockQuoteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DD8BE94D2E30053900886615 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DD8BE94E2E30055700886615 /* QuoteViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DD8BE9502E30081500886615 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD8BE9522E300B0500886615 /* QuoteListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8BE9532E300B0500886615 /* QuoteListView.swift in Sources */,
+				DD8BE9552E33F5D600886615 /* MockQuoteService.swift in Sources */,
+				DD8BE9462E30046100886615 /* Quote.swift in Sources */,
+				DD8BE94C2E3004E400886615 /* QuoteService.swift in Sources */,
+				DD8BE94F2E30055700886615 /* QuoteViewModel.swift in Sources */,
+				DD8BE9492E3004AD00886615 /* QuoteServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct QuotesAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QuoteListView(viewModel: QuoteViewModel(service: QuoteService()))
         }
     }
 }
