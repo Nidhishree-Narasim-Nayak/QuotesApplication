@@ -1,9 +1,3 @@
-//
-//  MockQuoteService.swift
-//  QuotesApp
-//
-//  Created by Nidhishree Nayak on 25/07/25.
-//
 
 import Foundation
 

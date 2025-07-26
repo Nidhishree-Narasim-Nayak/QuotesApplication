@@ -1,9 +1,3 @@
-//
-//  QuotesAppTests.swift
-//  QuotesAppTests
-//
-//  Created by Nidhishree Nayak on 22/07/25.
-//
 
 import Testing
 @testable import QuotesApp

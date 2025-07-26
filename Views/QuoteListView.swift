@@ -41,6 +41,6 @@ struct QuoteListView: View {
     }
 }
 
-//#Preview {
-//    QuoteListView()
-//}
+#Preview {
+    QuoteListView(viewModel: QuoteViewModel(service: QuoteService()))
+}
